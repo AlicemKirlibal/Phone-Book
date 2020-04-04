@@ -1,0 +1,26 @@
+﻿
+
+
+
+
+    <ul class="navbar-nav my-2 my-lg-0">
+
+        @if (Request.IsAuthenticated)
+        {
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/Department">@User.Identity.Name</a>
+            </li>
+           
+                <a class="nav-link" href="/Account/Logout">Logout</a>
+
+        }
+        else
+        {
+            <a href="/Account/Login" class="btn btn-outline">Giris Yap</a>
+        }
+
+    </ul>
+
+
+
